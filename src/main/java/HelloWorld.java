@@ -1,7 +1,13 @@
+import java.io.PrintStream;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        print(System.out);
+    }
+
+    public static void print(PrintStream out) {
+        out.println("Hello World!");
     }
 
 }
