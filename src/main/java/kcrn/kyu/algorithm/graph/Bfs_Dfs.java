@@ -1,22 +1,5 @@
 package kcrn.kyu.algorithm.graph;
 
-/*
-4 5 1
-1 2
-1 3
-1 4
-2 4
-3 4
-
-5 5 4
-1 2
-1 3
-1 4
-2 5
-4 5
-
-*/
-
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Queue;
@@ -46,18 +29,12 @@ public class Bfs_Dfs {
         }
 
         dfs(V);
-
         System.out.println();
-
         Arrays.fill(visited, false);
-
         bfs(V);
-
-
     }
 
     public static void dfs(int cur) {
-
         visited[cur] = true;
         System.out.print(String.valueOf(cur)+ " ");
 
@@ -69,14 +46,11 @@ public class Bfs_Dfs {
     }
 
     public static void bfs(int cur) {
-
         Queue<Integer> que = new LinkedList();
-
         visited[cur] = true;
         que.add(cur);
 
         while(!que.isEmpty()) {
-
             int here = que.remove();
             System.out.print(String.valueOf(here+" "));
 
@@ -85,9 +59,6 @@ public class Bfs_Dfs {
                 visited[i] = true;
                 que.add(i);
             }
-
         }
-
     }
-
 }

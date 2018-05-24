@@ -1,6 +1,6 @@
 package kcrn.kyu.algorithm.sort;
 
-public class insert {
+public class Insert {
 
     static final int MAX = 100000;
 

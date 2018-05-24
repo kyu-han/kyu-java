@@ -1,6 +1,6 @@
 package kcrn.kyu.algorithm.sort;
 
-public class selection {
+public class Selection {
 
     static final int MAX = 100000;
 
